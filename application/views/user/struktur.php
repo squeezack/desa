@@ -29,9 +29,9 @@
             <div class="row portfolio-container" data-aos="fade-up">
 
                 <div class="col-lg-6 col-md-12  portfolio-item filter-card" align="justify">
-                    <img src="<?php echo base_url('assets/user/img/struktur.jpg') ?>" class="img-fluid" alt="">
+                    <img src="<?php echo base_url('assets/img/struktur_organisasi.jpg') ?>" class="img-fluid" alt="">
                     <div class="portfolio-info">
-                        <a href="<?php echo base_url('assets/user/img/struktur.jpg') ?>" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link">Lihat</a>
+                        <a href="<?php echo base_url('assets/img/struktur_organisasi.jpg') ?>" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link">Lihat</a>
                     </div>
                 </div>
 

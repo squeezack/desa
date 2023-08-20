@@ -29,6 +29,11 @@
                 <input type="text" name="nik" class="form-control" value="<?php echo $penduduk['nik']; ?>">
               </div>
               <div class="form-group">
+                <label>No KK</label>
+                <input type="hidden" name="id_penduduk" class="form-control" value="<?php echo $penduduk['id_penduduk']; ?>">
+                <input type="text" name="no_kk" class="form-control" value="<?php echo $penduduk['no_kk']; ?>">
+              </div>
+              <div class="form-group">
                 <label>Nama</label>
                 <input type="text" name="nama" class="form-control" value="<?php echo $penduduk['nama']; ?>">
               </div>

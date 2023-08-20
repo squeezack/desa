@@ -19,6 +19,7 @@ class Penduduk extends CI_Controller {
 	{
 		$data = array(
 			'nik' => $this->input->post('nik'),
+			'no_kk' => $this->input->post('no_kk'),
 			'nama' => $this->input->post('nama'),
 			'tempat_lahir' => $this->input->post('tempat_lahir'),
 			'tgl_lahir'	=> $this->input->post('tgl_lahir'),
@@ -54,8 +55,9 @@ class Penduduk extends CI_Controller {
 	{
 		$id = $this->input->post('id_penduduk');
 		$data = array(
-			'nama' => $this->input->post('nama'),
 			'nik' => $this->input->post('nik'),
+			'no_kk' => $this->input->post('no_kk'),
+			'nama' => $this->input->post('nama'),
 			'tempat_lahir' => $this->input->post('tempat_lahir'),
 			'tgl_lahir' => $this->input->post('tgl_lahir'),
 			'jk' =>  $this->input->post('jk'),

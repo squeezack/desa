@@ -28,6 +28,7 @@
                   <tr>
                     <th class="text-center" style="width: 40px;">No</th>
                     <th>NIK</th>
+                    <th>No KK</th>
                     <th>Nama</th>
                     <th>Tempat/Tgl-Lahir</th>
                     <th>Jenis Kelamin</th>
@@ -44,6 +45,7 @@
                     
                     <td class="text-center"><?php echo $i++; ?></td>
                     <td><?php echo $row->nik; ?></td>
+                    <td><?php echo $row->no_kk; ?></td>
                     <td><?php echo $row->nama; ?></td>
                     <td><?php echo $row->tempat_lahir; ?>, <?php echo $row->tgl_lahir; ?></td>
                     <td><?php echo $row->jk; ?></td>
@@ -88,6 +90,10 @@
           <div class="form-group">
             <label>NIK</label>
             <input type="text" name="nik" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>No KK</label>
+            <input type="text" name="no_kk" class="form-control">
           </div>
           <div class="form-group">
             <label>Nama</label>

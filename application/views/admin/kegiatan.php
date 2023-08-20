@@ -3,7 +3,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        <?php echo $title; ?>
+      Data Produk Olahan UMKM
       </h1>
     </section>
 
@@ -17,9 +17,9 @@
           <div class="box">
             <div class="box-header">
               <button type="button" class="btn btn-sm btn-primary pull-right" data-toggle="modal" data-target="#modal-kegiatan">
-                <i class="fa fa-plus"> Kegiatan</i> 
+                <i class="fa fa-plus"> Tambah Produk</i> 
               </button>
-              <h3 class="box-title">Tabel Kegiatan</h3>
+              <h3 class="box-title">Produk UMKM</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body no-padding">

@@ -131,9 +131,8 @@
                   <img src="<?php echo base_url('assets/user/img/portfolio/' . $row->gambar) ?>" style="max-height: 200px;" class="img-fluid" alt="">
                 </div>
                 <div class="member-info">
-                  <h4><?php echo $row->judul; ?></h5>
-                  </h4>
-                  <span><?php echo $row->isi; ?></span>
+                  <h4><?php echo $row->judul; ?></h4>
+                  <h4><p style="color: black;"> <?php echo $row->isi; ?></p></h4>
                 </div>
               </div>
             </div>
@@ -161,9 +160,8 @@
                   <img src="<?php echo base_url('assets/user/img/' . $row->gambar) ?>" style="max-height: 200px;" class="img-fluid" alt="">
                 </div>
                 <div class="member-info">
-                  <h4><?php echo $row->judul; ?></h5>
-                  </h4>
-                  <span><?php echo $row->isi; ?></span>
+                  <h4><?php echo $row->judul; ?></h4>
+                  <h4><p style="color: black;"> <?php echo $row->isi; ?></p></h4>
                 </div>
               </div>
             </div>

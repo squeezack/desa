@@ -32,11 +32,11 @@
           </a>
         </li>
 
-        <li class="list">
+        <!-- <li class="list">
           <a href="<?php echo base_url('surat/list'); ?>">
             <i class="fa fa-envelope"></i> <span>Surat Masuk</span>
           </a>
-        </li>
+        </li> -->
 
         <li class="list">
           <a href="<?php echo base_url('admin/kegiatan'); ?>">

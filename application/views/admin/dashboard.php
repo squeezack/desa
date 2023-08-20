@@ -22,7 +22,7 @@
             <div class="inner">
               <h3><?php echo $this->DataModel->getData('perangkat')->num_rows(); ?></h3>
 
-              <p>Data Perangkat</p>
+              <p>Data Perangkat Desa</p>
             </div>
             <div class="icon">
               <i class="ion ion-person-add"></i>

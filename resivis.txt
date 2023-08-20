@@ -1,0 +1,9 @@
+1. masukan gambar di bawah Tentang
+done 2. penulisan di bawah umkm di buat warna hitam
+3. halaman sejarah d tambahkan foto
+done 4. tambahkan google map di halaman lokasi
+done 5. data perangkat di ubah jadi data perangkat desa
+done 6. sistem kegiatan di ganti menjadi data produk olahan umkm dan tabel kegiatan di ganti jadi produk umkm
+done 7. penambahan format no kk di bawah nik dan di atas nama
+done 8. bagan perangkat desa di ganti
+done 9. format surat masuk di hapus
