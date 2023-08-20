@@ -7,6 +7,7 @@ class User extends CI_Controller {
 	{
 		$data['identitas'] = $this->DataModel->getData('identitas')->result();
 		$data['about'] = $this->DataModel->getData('about')->result();
+		$data['aktifitas'] = $this->db->get('aktifitas')->result();
 		$data['kegiatan'] = $this->db->get('kegiatan')->result();
 		$data['fasilitas'] = $this->db->get('fasilitas')->result();
 		if($this->session->userdata('email')){
@@ -55,6 +56,20 @@ class User extends CI_Controller {
 		}
 		$this->load->view('user/header', $data);
 		$this->load->view('user/struktur', $data);
+		$this->load->view('user/footer', $data);
+	}
+	public function aktifitas()
+	{
+		$data['identitas'] = $this->DataModel->getData('identitas')->result();
+		$data['about'] = $this->DataModel->getData('about')->result();
+		$data['kegiatan'] = $this->db->get('kegiatan')->result();
+		$data['aktifitas'] = $this->db->get('aktifitas')->result();
+		$data['fasilitas'] = $this->db->get('fasilitas')->result();
+		if($this->session->userdata('email')){
+			$data['surat'] = $this->Surat_model->get_by_sender($this->session->userdata('id'));
+		}
+		$this->load->view('user/header', $data);
+		$this->load->view('user/aktifitas', $data);
 		$this->load->view('user/footer', $data);
 	}
 	public function fasilitas()

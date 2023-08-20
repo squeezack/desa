@@ -43,6 +43,12 @@
             <i class="fa fa-users"></i> <span>Produk Olahan UMKM</span>
           </a>
         </li>
+        
+        <li class="list">
+          <a href="<?php echo base_url('admin/aktifitas'); ?>">
+            <i class="fa fa-users"></i> <span>Kegiatan</span>
+          </a>
+        </li>
 
         <li class="list">
           <a href="<?php echo base_url('admin/pesan'); ?>">

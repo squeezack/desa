@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 20 Agu 2023 pada 09.05
+-- Waktu pembuatan: 20 Agu 2023 pada 14.45
 -- Versi server: 10.4.11-MariaDB
 -- Versi PHP: 7.4.1
 
@@ -66,6 +66,26 @@ INSERT INTO `admin` (`id`, `username`, `no_telepon`, `email`, `password`, `image
 (1, 'admin', '33333232', 'admin@gmail.com', 'admin', 'default.jpg', '2020-12-05'),
 (3, 'antony sinugian', '1233123', 'mycodingpersona@gmail.com', 'adminter', 'default.jpg', '2023-02-02'),
 (4, 'Dimas Ganxx', '12333321233', 'sianu@gmail.com', 'admin', 'default.jpg', '2023-02-04');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `aktifitas`
+--
+
+CREATE TABLE `aktifitas` (
+  `id_aktifitas` int(11) NOT NULL,
+  `judul` varchar(100) NOT NULL,
+  `isi` varchar(100) NOT NULL,
+  `gambar` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `aktifitas`
+--
+
+INSERT INTO `aktifitas` (`id_aktifitas`, `judul`, `isi`, `gambar`) VALUES
+(1, 'asdaa', 'asa', 'Screenshot_2023-07-13_1608511.png');
 
 -- --------------------------------------------------------
 
@@ -161,7 +181,7 @@ CREATE TABLE `message` (
 CREATE TABLE `penduduk` (
   `id_penduduk` int(11) NOT NULL,
   `nik` varchar(30) NOT NULL,
-  `no_kk` int(100) NOT NULL,
+  `no_kk` varchar(30) NOT NULL,
   `nama` varchar(60) NOT NULL,
   `tempat_lahir` varchar(50) NOT NULL,
   `tgl_lahir` date NOT NULL,
@@ -174,7 +194,8 @@ CREATE TABLE `penduduk` (
 --
 
 INSERT INTO `penduduk` (`id_penduduk`, `nik`, `no_kk`, `nama`, `tempat_lahir`, `tgl_lahir`, `jk`, `status`) VALUES
-(6, '123456789', 12345678, 'Ali Subur, S.Kom.', 'Medan', '2023-07-05', 'Laki-Laki', 'Belum Kawin');
+(6, '123456789', '21474836471111', 'Ali Subur, S.Kom.', 'Medan', '2023-07-05', 'Laki-Laki', 'Belum Kawin'),
+(8, '11111111111', '2147483647', 'aaaaaaaaaaaa', 'asasa', '2023-08-23', 'Laki-Laki', 'Belum Kawin');
 
 -- --------------------------------------------------------
 
@@ -213,6 +234,13 @@ CREATE TABLE `surat` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dumping data untuk tabel `surat`
+--
+
+INSERT INTO `surat` (`id`, `judul`, `keterangan`, `pengirim`, `diajukan_tgl`, `status`) VALUES
+(13, 'asda', 'gilang', 1, '08/20/23', 'dikirim');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -227,6 +255,12 @@ ALTER TABLE `about`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `aktifitas`
+--
+ALTER TABLE `aktifitas`
+  ADD PRIMARY KEY (`id_aktifitas`);
 
 --
 -- Indeks untuk tabel `fasilitas`
@@ -287,6 +321,12 @@ ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
+-- AUTO_INCREMENT untuk tabel `aktifitas`
+--
+ALTER TABLE `aktifitas`
+  MODIFY `id_aktifitas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT untuk tabel `fasilitas`
 --
 ALTER TABLE `fasilitas`
@@ -314,7 +354,7 @@ ALTER TABLE `message`
 -- AUTO_INCREMENT untuk tabel `penduduk`
 --
 ALTER TABLE `penduduk`
-  MODIFY `id_penduduk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_penduduk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT untuk tabel `perangkat`
@@ -326,7 +366,7 @@ ALTER TABLE `perangkat`
 -- AUTO_INCREMENT untuk tabel `surat`
 --
 ALTER TABLE `surat`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

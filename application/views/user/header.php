@@ -57,6 +57,7 @@
             </ul>
           </li>
 
+          <li><a href="<?= base_url('user/aktifitas') ?>">Kegiatan</a></li>
           <li><a href="<?= base_url('user/fasilitas') ?>">Fasilitas</a></li>
           <li><a href="<?= base_url('user/produk') ?>">Produk</a></li>
           <li class="dropdown"><a href="#"><span>Layanan</span><i class="bi bi-chevron-down"></i></a>
